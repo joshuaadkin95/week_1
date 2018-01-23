@@ -11,12 +11,12 @@ public class Main {
 
         int highestTemp=0, avgTemp =0;
 
-        for(int index = 0; index < weekTemps.length; index+=1)
+        for(int index = 0; index < weekTemps.length; index+=1) //loops through the week's length to find the highest temp & create the sum
         {
             if (weekTemps[index] > highestTemp)
-                highestTemp = weekTemps[index];
+                highestTemp = weekTemps[index]; //redefines the highest temp if the current index is the new highest
 
-            avgTemp += weekTemps[index];
+            avgTemp += weekTemps[index]; //adds to sum of temps for the later average
         }
 
         System.out.print(cityName + " " + cityZip + " has the highest temperature this week of " + highestTemp);
